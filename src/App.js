@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import {ABI} from './abi.mjs'
 import './App.css';
-const CONTRACT_ADDRESS = '0x98b4175b0df547A137F9c742a85b4f58e1f69196'; // Deployed contract address on Base Sepolia
 
+// Deployed contract address on Base Sepolia
+
+const CONTRACT_ADDRESS = '0x98b4175b0df547A137F9c742a85b4f58e1f69196'; 
 function App() {
   const [web3, setWeb3] = useState(null);
   const [account, setAccount] = useState('');
